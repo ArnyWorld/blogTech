@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arnaldo Muñoz Mendoza">
+    <meta name="keywords" content="HTML, CSS, SASS, JS">
+    <title>Blog Tecnológico</title>
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Preload-->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="font" crossorigin="crossorigin" />
+    <link rel="preload" href="css/styles.css" as="style">
+    <!--Prefetch-->
+    <link rel="prefetch" href="index.html" as="document">
+    <link rel="prefetch" href="services.html" as="document">
+</head>
+<body>
+    <header class="header">
+
+    </header>
+   
+    <div class="navigation">
+
+        <nav class="navigationBar">
+            <div class="container navigationBar__container ">
+                <a href="./index.html" class="navigationBar__logo">
+                    <img src="img/logoBlogBlue.png" class="navigationBar__image" loading="lazy" alt="Blog Tecnológico LOGO">
+                </a>
+                <i class="fa-solid fa-bars-staggered navigationBar__bars"></i>
+                <ul class="navigationBar__links">
+                    <li class="navigationBar__list">
+                        <a href="index.html" class="navigationBar__link navigationBar__link--active ">Inicio</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="about.html" class="navigationBar__link ">Nosotros</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="services.html" class="navigationBar__link ">Servicios</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="contact.html" class="navigationBar__link ">Contactos</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="login.html" class="navigationBar__link ">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="progressBar"></div>
+    </div>        
+
+    <main class="main">
+        <h1 class="title">Especialidades tecnológicas</h1>
+        <div class="container topArticles">
+            <div class="specialties">
+                <article class="specialty">
+                    <h2 class="specialty__title">Robótica</h2>
+                    <img src="img/tecnologia1.jpg" class="specialty__image" loading="lazy" alt="Robótica">
+                    <p class="specialty__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nisi provident ducimus nesciunt praesentium aspernatur magni, optio dolore perspiciatis commodi nostrum temporibus similique incidunt vero asperiores recusandae nemo odit obcaecati?
+                        Nihil et inventore expedita magnam. Consectetur, aperiam repellat explicabo quidem similique ipsa unde doloremque nobis, ipsum optio natus minima voluptatibus fugit magni inventore neque culpa obcaecati deserunt voluptates. Cumque, officiis.
+                        Expedita harum voluptate doloremque velit atque nam fuga magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum perspiciatis maxime, debitis sunt perferendis eligendi sed repellendus est possimus earum dicta eveniet id itaque quos quod inventore, consectetur similique?
+                        Iusto vitae consequuntur ea officia fugit enim? Cum expedita a tempora quos molestiae vel labore aperiam, nisi ex eaque doloribus fuga fugit tenetur optio animi veniam quidem delectus cupiditate assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugit magnam fugiat cupiditate perspiciatis iure cumque at maiores, ex excepturi, velit in cum odio ad exercitationem, molestiae deserunt adipisci commodi. A excepturi ex modi dolore architecto deleniti aspernatur nemo! Repellendus tempora iure consequuntur itaque enim odio. Libero inventore ducimus saepe neque?
+                    </p>
+                    <a href="#" class="specialty__button">ver más</a>
+                </article>
+                <article class="specialty">
+                    <h2 class="specialty__title">Redes</h2>
+                    <img src="img/tecnologia2.jpg" class="specialty__image" loading="lazy" alt="Redes">
+                    <p class="specialty__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nisi provident ducimus nesciunt praesentium aspernatur magni, optio dolore perspiciatis commodi nostrum temporibus similique incidunt vero asperiores recusandae nemo odit obcaecati?
+                        Nihil et inventore expedita magnam. Consectetur, aperiam repellat explicabo quidem similique ipsa unde doloremque nobis, ipsum optio natus minima voluptatibus fugit magni inventore neque culpa obcaecati deserunt voluptates. Cumque, officiis.
+                        Expedita harum voluptate doloremque velit atque nam fuga magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum perspiciatis maxime, debitis sunt perferendis eligendi sed repellendus est possimus earum dicta eveniet id itaque quos quod inventore, consectetur similique?
+                        Iusto vitae consequuntur ea officia fugit enim? Cum expedita a tempora quos molestiae vel labore aperiam, nisi ex eaque doloribus fuga fugit tenetur optio animi veniam quidem delectus cupiditate assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugit magnam fugiat cupiditate perspiciatis iure cumque at maiores, ex excepturi, velit in cum odio ad exercitationem, molestiae deserunt adipisci commodi. A excepturi ex modi dolore architecto deleniti aspernatur nemo! Repellendus tempora iure consequuntur itaque enim odio. Libero inventore ducimus saepe neque?
+                    </p>
+                    <a href="#" class="specialty__button">ver más</a>
+                </article>
+                <article class="specialty">
+                    <h2 class="specialty__title">Inteligencia Artificial</h2>
+                    <img src="img/tecnologia3.jpg" class="specialty__image" loading="lazy" alt="Inteligencia Artificial">
+                    <p class="specialty__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nisi provident ducimus nesciunt praesentium aspernatur magni, optio dolore perspiciatis commodi nostrum temporibus similique incidunt vero asperiores recusandae nemo odit obcaecati?
+                        Nihil et inventore expedita magnam. Consectetur, aperiam repellat explicabo quidem similique ipsa unde doloremque nobis, ipsum optio natus minima voluptatibus fugit magni inventore neque culpa obcaecati deserunt voluptates. Cumque, officiis.
+                        Expedita harum voluptate doloremque velit atque nam fuga magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum perspiciatis maxime, debitis sunt perferendis eligendi sed repellendus est possimus earum dicta eveniet id itaque quos quod inventore, consectetur similique?
+                        Iusto vitae consequuntur ea officia fugit enim? Cum expedita a tempora quos molestiae vel labore aperiam, nisi ex eaque doloribus fuga fugit tenetur optio animi veniam quidem delectus cupiditate assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugit magnam fugiat cupiditate perspiciatis iure cumque at maiores, ex excepturi, velit in cum odio ad exercitationem, molestiae deserunt adipisci commodi. A excepturi ex modi dolore architecto deleniti aspernatur nemo! Repellendus tempora iure consequuntur itaque enim odio. Libero inventore ducimus saepe neque?
+                    </p>
+                    <a href="#" class="specialty__button">ver más</a>
+                </article>
+                <article class="specialty">
+                    <h2 class="specialty__title">Desarrollo Web</h2>
+                    <img src="img/tecnologia4.jpg" class="specialty__image" loading="lazy" alt="Desarrollo Web">
+                    <p class="specialty__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nisi provident ducimus nesciunt praesentium aspernatur magni, optio dolore perspiciatis commodi nostrum temporibus similique incidunt vero asperiores recusandae nemo odit obcaecati?
+                        Nihil et inventore expedita magnam. Consectetur, aperiam repellat explicabo quidem similique ipsa unde doloremque nobis, ipsum optio natus minima voluptatibus fugit magni inventore neque culpa obcaecati deserunt voluptates. Cumque, officiis.
+                        Expedita harum voluptate doloremque velit atque nam fuga magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum perspiciatis maxime, debitis sunt perferendis eligendi sed repellendus est possimus earum dicta eveniet id itaque quos quod inventore, consectetur similique?
+                        Iusto vitae consequuntur ea officia fugit enim? Cum expedita a tempora quos molestiae vel labore aperiam, nisi ex eaque doloribus fuga fugit tenetur optio animi veniam quidem delectus cupiditate assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugit magnam fugiat cupiditate perspiciatis iure cumque at maiores, ex excepturi, velit in cum odio ad exercitationem, molestiae deserunt adipisci commodi. A excepturi ex modi dolore architecto deleniti aspernatur nemo! Repellendus tempora iure consequuntur itaque enim odio. Libero inventore ducimus saepe neque?
+                    </p>
+                    <a href="#" class="specialty__button">ver más</a>
+                </article>
+                <article class="specialty">
+                    <h2 class="specialty__title">Seguridad Informática</h2>
+                    <img src="img/tecnologia5.jpg" class="specialty__image" loading="lazy" alt="Seguridad Informática">
+                    <p class="specialty__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nisi provident ducimus nesciunt praesentium aspernatur magni, optio dolore perspiciatis commodi nostrum temporibus similique incidunt vero asperiores recusandae nemo odit obcaecati?
+                        Nihil et inventore expedita magnam. Consectetur, aperiam repellat explicabo quidem similique ipsa unde doloremque nobis, ipsum optio natus minima voluptatibus fugit magni inventore neque culpa obcaecati deserunt voluptates. Cumque, officiis.
+                        Expedita harum voluptate doloremque velit atque nam fuga magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum perspiciatis maxime, debitis sunt perferendis eligendi sed repellendus est possimus earum dicta eveniet id itaque quos quod inventore, consectetur similique?
+                        Iusto vitae consequuntur ea officia fugit enim? Cum expedita a tempora quos molestiae vel labore aperiam, nisi ex eaque doloribus fuga fugit tenetur optio animi veniam quidem delectus cupiditate assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugit magnam fugiat cupiditate perspiciatis iure cumque at maiores, ex excepturi, velit in cum odio ad exercitationem, molestiae deserunt adipisci commodi. A excepturi ex modi dolore architecto deleniti aspernatur nemo! Repellendus tempora iure consequuntur itaque enim odio. Libero inventore ducimus saepe neque?
+                    </p>
+                    <a href="#" class="specialty__button">ver más</a>
+                </article>
+            </div>
+            <aside class="aside">
+                <article class="post">
+                    <h2 class="post__subtitle">Otros Post</h2>
+                    <img class="post__image" src="img/post.jpg" loading="lazy" alt="Post">
+                    <ul class="post__articles">
+                        <li class="post__list">
+                            <a href="" class="post__link">Framework 2022</a>
+                        </li>
+                        <li class="post__list">
+                            <a href="" class="post__link">Trucos CSS</a>
+                        </li>
+                        <li class="post__list">
+                            <a href="" class="post__link">Librerías JS</a>
+                        </li>
+                        <li class="post__list">
+                            <a href="" class="post__link">La importancia de UI/UX</a>
+                        </li>
+
+                    </ul>
+                </article>
+                <article class="loginIndex">
+                    <h2 class="loginIndex__subtitle">Iniciar sesión</h2>
+                    <form class="formLogin" autocomplete="off">
+                        <div class="formLogin__formGroup">
+                            <label for="nameUser" class="formLogin__title">Usuario: </label>
+                            <input name="nameUser" class="formLogin__input" type="text" placeholder="Ingrese su nombre de usuario">
+                        </div>
+                        <div class="formLogin__formGroup">
+                            <label for="password" class="formLogin__title">Contraseña: </label>
+                            <input type="password" class="formLogin__input" name="password" placeholder="Ingrese su contraseña">
+                        </div>
+                        <input type="submit" value="Ingresar" class="formLogin__button">
+                    </form>
+                </article> 
+
+                <article class="popular">
+                    <h2 class="popular__subtitle">Lo más popular</h2>
+                    <div class="popular__content">
+                        <span class="popular__number">
+                            1
+                        </span>
+                        <p class="popular__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iusto eum obcaecati. Asperiores quibusdam, quisquam et neque eveniet labore ullam atque exercitationem, similique modi molestiae mollitia laboriosam error quos beatae.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="popular__content">
+                        <span class="popular__number">
+                            2
+                        </span>
+                        <p class="popular__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iusto eum obcaecati. Asperiores quibusdam, quisquam et neque eveniet labore ullam atque exercitationem, similique modi molestiae mollitia laboriosam error quos beatae.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="popular__content">
+                        <span class="popular__number">
+                            3
+                        </span>
+                        <p class="popular__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iusto eum obcaecati. Asperiores quibusdam, quisquam et neque eveniet labore ullam atque exercitationem, similique modi molestiae mollitia laboriosam error quos beatae.
+                        </p>
+                    </div>
+                    <hr>                    
+                    <div class="popular__content">
+                        <span class="popular__number">
+                            4
+                        </span>
+                        <p class="popular__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iusto eum obcaecati. Asperiores quibusdam, quisquam et neque eveniet labore ullam atque exercitationem, similique modi molestiae mollitia laboriosam error quos beatae.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="popular__content">
+                        <span class="popular__number">
+                            5
+                        </span>
+                        <p class="popular__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iusto eum obcaecati. Asperiores quibusdam, quisquam et neque eveniet labore ullam atque exercitationem, similique modi molestiae mollitia laboriosam error quos beatae.
+                        </p>
+                    </div>
+                    <hr>
+                </article>
+                
+            </aside>
+        </div>
+
+        <div class="bottomArticle">
+            <section class="container articles">
+                <h2 class="articles__title">¿Te gusto este artículo? </h2>
+                <p class="articles__text">"Tal vez estos artículos son de tu interés"</p>
+                <div class="articlesContainer">
+                    <article class="article">
+                        <div class="articleMain">
+                            <img src="img/web-min.jpg" class="articleMain__image" loading="lazy" alt="Web">
+                            <header class="headerArticle">
+                                <h3 class="headerArticle__title">Desarrollo Web</h3>
+                                <span class="headerArticle__date">23 de octubre 2021</span>
+                                <hr>
+                            </header>
+                            <footer class="footerArticle">
+                                <div class="footerArticle__user">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p class="footerArticle__nameUser">Jane Cooper</p>
+                                </div>
+                                <div class="details">
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p class="details__number">115</p>
+                                    </div>
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-message"></i>
+                                        <p class="details__number">31</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                        <div class="articleSecondary">
+                            <header class="headerArticle">
+                                <h3 class="headerArticle__title">Desarrollo Web</h3>
+                                <span class="headerArticle__date">23 de octubre 2021</span>
+                                
+                                <p class="headerArticle__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quod exercitationem facere, qui vel minus accusamus eius. Perspiciatis unde rerum nemo ducimus blanditiis placeat omnis. Impedit corrupti totam consectetur quibusdam!
+                                </p>
+                                
+                                <a href="#" class="headerArticle__link">ver más &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+
+                                <hr>
+                            </header>
+                            <footer class="footerArticle">
+                                <div class="footerArticle__user">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p class="footerArticle__nameUser">Jane Cooper</p>
+                                </div>
+                                <div class="details">
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p class="details__number">115</p>
+                                    </div>
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-message"></i>
+                                        <p class="details__number">31</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="articleMain">
+                            <img src="img/mobile-min.jpg" class="articleMain__image" loading="lazy" alt="Web">
+                            <header class="headerArticle">
+                                <h3 class="headerArticle__title">Desarrollo Movil</h3>
+                                <span class="headerArticle__date">1 de diciembre 2021</span>
+                                <hr>
+                            </header>
+                            <footer class="footerArticle">
+                                <div class="footerArticle__user">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p class="footerArticle__nameUser">Mary Ferrano</p>
+                                </div>
+                                <div class="details">
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p class="details__number">100</p>
+                                    </div>
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-message"></i>
+                                        <p class="details__number">55</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                        <div class="articleSecondary">
+                            <header class="headerArticle">
+                                <h3 class="headerArticle__title">Desarrollo Movil</h3>
+                                <span class="headerArticle__date">01 de diciembre 2021</span>
+                                
+                                <p class="headerArticle__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quod exercitationem facere, qui vel minus accusamus eius. Perspiciatis unde rerum nemo ducimus blanditiis placeat omnis. Impedit corrupti totam consectetur quibusdam!
+                                </p>
+                                
+                                <a href="#" class="headerArticle__link">ver más &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+
+                                <hr>
+                            </header>
+                            <footer class="footerArticle">
+                                <div class="footerArticle__user">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p class="footerArticle__nameUser">Mary Ferrano</p>
+                                </div>
+                                <div class="details">
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p class="details__number">100</p>
+                                    </div>
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-message"></i>
+                                        <p class="details__number">55</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="articleMain">
+                            <img src="img/seguridad-min.jpg" class="articleMain__image" loading="lazy" alt="Seguridad">
+                            <header class="headerArticle">
+                                <h3 class="headerArticle__title">Seguridad de la información</h3>
+                                <span class="headerArticle__date">10 de diciembre 2022</span>
+                                <hr>
+                            </header>
+                            <footer class="footerArticle">
+                                <div class="footerArticle__user">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p class="footerArticle__nameUser">Robert Floy</p>
+                                </div>
+                                <div class="details">
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p class="details__number">115</p>
+                                    </div>
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-message"></i>
+                                        <p class="details__number">31</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                        <div class="articleSecondary">
+                            <header class="headerArticle">
+                                <h3 class="headerArticle__title">Seguridad de la información</h3>
+                                <span class="headerArticle__date">10 de marzo 2022</span>
+                                
+                                <p class="headerArticle__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quod exercitationem facere, qui vel minus accusamus eius. Perspiciatis unde rerum nemo ducimus blanditiis placeat omnis. Impedit corrupti totam consectetur quibusdam!
+                                </p>
+                                
+                                <a href="#" class="headerArticle__link">ver más &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+
+                                <hr>
+                            </header>
+                            <footer class="footerArticle">
+                                <div class="footerArticle__user">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p class="footerArticle__nameUser">Robert Floy</p>
+                                </div>
+                                <div class="details">
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p class="details__number">115</p>
+                                    </div>
+                                    <div class="details__footer">
+                                        <i class="fa-regular fa-message"></i>
+                                        <p class="details__number">31</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+<footer class="footer">
+    <div class="footer__header container">
+        <div class="footer__logo">
+            <a href="index.html" class="footer__logoLink">
+                <img src="img/logoBlogWhite.png" class="footer__image" loading="lazy" alt="Logo Blog tecnológico">
+            </a>
+        </div>
+        <div class="footer__networks">
+            <h3 class="footer__titleNetwork"> Siguenos en nuestras redes</h3>
+            <div class="footer__icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <nav class="footer__menu">
+            <ul class="footer__links">
+                <li class="footer__list">
+                    <a href="index.html" class="footer__link footer__link--active ">Inicio</a>
+                </li>
+                <li class="footer__list">
+                    <a href="about.html" class="footer__link ">Nosotros</a>
+                </li>
+                <li class="footer__list">
+                    <a href="services.html" class="footer__link ">Servicios</a>
+                </li>
+                <li class="footer__list">
+                    <a href="contact.html" class="footer__link ">Contactos</a>
+                </li>
+                <li class="footer__list">
+                    <a href="login.html" class="footer__link ">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <p class="copy">
+        copyright blog tecnológico <span id="year"></span> - Todos los derechos reservados
+    </p>
+</footer>
+
+<i class="goTop fa-solid fa-circle-chevron-up"></i>
+<script src="js/generales.js"></script>
+</body>
+</html>

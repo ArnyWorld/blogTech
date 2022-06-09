@@ -1,0 +1,98 @@
+@use '../base/variables' as var;
+@use '../base/colors' as color;
+@use '../base/globales';
+@use '../base/mixins' as mixin;
+
+.header{
+    width: 100%;
+    min-height: 75vh;
+    background-image:url(../../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navigation{
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navigationBar{
+    background-color: color.$color2;
+    padding: 1em 0;
+    position: relative;
+    &__container{
+        display: flex;   
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @include mixin.litle{
+            flex-direction: column;
+        }
+    }
+    &__logo{
+        width: 400px;
+
+        @include mixin.medium{
+            width: 230px;
+        }
+        @include mixin.litle{
+            width: 200px;
+            position: absolute;
+            left: 15px;
+
+            
+        }
+    }
+    &__image{
+        width: 100%;
+    }
+    &__bars{
+        display: none;
+        cursor: pointer;
+        @include mixin.litle{
+            display: inline-block;
+            align-self: flex-end;
+        }
+    }
+    &__links{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        list-style: none;
+        transition: all .5s;
+        overflow: hidden;
+        @include mixin.medium{
+            width: 60%;
+        }
+
+        @include mixin.litle{
+            display: none;
+            width: 100%;
+        }
+        &--show{
+            display: flex;
+            flex-direction: column;
+            padding: 1em 0 0 0;
+        }
+    }
+    &__list{
+        @include mixin.litle{
+            margin-bottom: 0.7em;;
+        }
+    }
+    &__link{
+        color: color.$color5;
+        font-family: var.$font1;
+        font-size: 1.1rem;
+        &--active{
+            text-shadow: 5px 5px 10px color.$color5;
+        }
+
+    }
+}
+
+.progressBar{
+    height: 5px;
+    background-color: color.$color1;
+    margin-bottom: 1.3em;
+}

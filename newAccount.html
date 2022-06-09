@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arnaldo Muñoz Mendoza">
+    <meta name="keywords" content="HTML, CSS, SASS, JS">
+    <title>Blog Tecnológico</title>
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="login">
+    <div class="loginLeft">
+        <img src="img/logoBlogWhite.png" class="loginLeft__image" loading="lazy" alt="Logo">
+        <h1 class="loginLeft__title">Bienvenido al BLOG Tecnológico</h1>
+        <p class="loginLeft__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <nav class="navigationLogin">
+            <a class="navigationLogin__link" href="index.html">Inicio</a>
+            <a class="navigationLogin__link" href="about.html">Nosotros</a>
+            <a class="navigationLogin__link" href="services.html">Servicios</a>
+            <a class="navigationLogin__link" href="contact.html">Contacto</a>
+        </nav>
+    </div>
+    <div class="loginRight">
+        <form class="form" autocomplete="off">
+            <a href="index.html" class="form__imageLink">
+                <img src="img/logoBlogBlue.png" class="form__image" loading="lazy" alt="Logo">
+            </a>
+            <h2 class="form__title">Iniciar sesión</h2>
+            <div class="form__control">
+                <input class="form__input" type="text" id="username" placeholder=" ">
+                <label for="username" class="form__label"><i class="form__icon fa-solid fa-user"></i>Nombre de Usuario</label>
+            </div>
+            <div class="form__control">
+                <input class="form__input" type="email" id="email" placeholder=" ">
+                <label for="email" class="form__label"> <i class="form__icon fa-solid fa-envelope"></i>Correo electrónico</label>
+            </div>
+            <div class="form__control">
+                <input class="form__input" type="password" id="password" placeholder=" ">
+                <label for="password" class="form__label"><i class="form__icon fa-solid fa-lock"></i>Contraseña</label>
+            </div>
+
+            <p class="form__terms">
+                By clicking "Next", you agree to the <span> Terms </span> and <span> Privacy Policy </span> to create a Engadget account
+            </p>
+
+            <div class="form__control">
+                <button type="submit" class="form__submit"> Crear Cuenta</button>
+            </div>
+
+          
+            <p class="form__textGoogle"> <a href="login.html" class="form__newAccount"> Ya tengo una cuenta </a> o iniciare sesión con</p>
+            <a href="#" class="form__buttonGoogle"> <img src="img/iconGoogle.png" loading="lazy" class="form__imageGoogle" alt=""> Google </a>
+        </form>
+        <nav class="navigationLogin">
+            <a class="navigationLogin__link" href="index.html">Inicio</a>
+            <a class="navigationLogin__link" href="about.html">Nosotros</a>
+            <a class="navigationLogin__link" href="services.html">Servicios</a>
+            <a class="navigationLogin__link" href="contact.html">Contacto</a>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>

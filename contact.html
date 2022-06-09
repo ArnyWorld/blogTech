@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arnaldo Muñoz Mendoza">
+    <meta name="keywords" content="HTML, CSS, SASS, JS">
+    <title>Blog Tecnológico</title>
+    <link rel="icon" href="img/icono.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+
+    </header>
+   
+    <div class="navigation">
+
+        <nav class="navigationBar">
+            <div class="container navigationBar__container ">
+                <a href="./index.html" class="navigationBar__logo">
+                    <img src="img/logoBlogBlue.png" class="navigationBar__image" loading="lazy" alt="Blog Tecnológico LOGO">
+                </a>
+                <i class="fa-solid fa-bars-staggered navigationBar__bars"></i>
+                <ul class="navigationBar__links">
+                    <li class="navigationBar__list">
+                        <a href="index.html" class="navigationBar__link ">Inicio</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="about.html" class="navigationBar__link ">Nosotros</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="services.html" class="navigationBar__link  ">Servicios</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="contact.html" class="navigationBar__link navigationBar__link--active">Contactos</a>
+                    </li>
+                    <li class="navigationBar__list">
+                        <a href="login.html" class="navigationBar__link ">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="progressBar"></div>
+    </div>        
+
+    <main class="main">
+
+        <h2 class="title">Contactos</h2>
+
+        <div class="container">
+            <div class="contactContainer">
+                <article class="contentLeft">
+                    <h2 class="contentLeft__subtitle">Amet minim mollit non deserunt ullamco est</h2>
+                    <p class="contentLeft__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id consectetur, repudiandae doloremque autem officia vel necessitatibus laboriosam mollitia. Repellendus labore vel, iure perferendis optio doloribus quibusdam ipsum at sapiente?
+                    </p>
+                </article>
+                <img src="img/contact-min.jpg" class="imageContact" loading="lazy" alt="services">
+            </div> 
+            <hr>
+            
+            <div class="detailsContact">
+                <form class="formContact" autocomplete="off">
+                    <div class="formContact__formControl">
+                        <label  class="formContact__label" for="name">Your Name*</label>
+                        <input type="text" class="formContact__input" id="name">
+                    </div>                    
+                    <div class="formContact__formControl">
+                        <label  class="formContact__label" for="email">Your Email*</label>
+                        <input type="email" class="formContact__input" id="email">
+                    </div>                    
+                    <div class="formContact__formControl">
+                        <label  class="formContact__label" for="company">Company/ Organization*</label>
+                        <input type="text" class="formContact__input" id="company">
+                    </div>                    
+                    <div class="formContact__formControl">
+                        <label  class="formContact__label" for="detail">Projects Details*</label>
+                        <textarea name="detail" class="formContact__input" id="detail" cols="30" rows="5"></textarea>                    
+                    </div>
+                    <input type="submit" class="formContact__button" value="Send">                   
+                </form>
+                <div class="detailsContainer">
+                    <div class="detailsContent">
+                        <i class="detailsContent__icon fa-solid fa-headset"></i>
+                        <div class="detailsContent__contentText">
+                            <h3 class="detailsContent__title">Call</h3>
+                            <p class="detailsContent__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis eos dolorem quam nihil nemo sint non laborum ad aut, voluptas sit, dolor amet facilis saepe possimus enim aliquam quidem.</p>
+                            <span class="detailsContent__footer">
+                                +(406) 555-0120
+                            </span>
+                        </div>
+                    </div>
+                    <div class="detailsContent">
+                        <i class="detailsContent__icon fa-regular fa-envelope"></i>
+                        <div class="detailsContent__contentText">
+                            <h3 class="detailsContent__title">Email</h3>
+                            <p class="detailsContent__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis eos dolorem quam nihil nemo sint non laborum ad aut, voluptas sit, dolor amet facilis saepe possimus enim aliquam quidem.</p>
+                            <span class="detailsContent__footer">
+                                kenzi.lawson@example.com
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="detailsContent">
+                        <i class="detailsContent__icon fa-solid fa-location-dot"></i>
+                        <div class="detailsContent__contentText">
+                            <h3 class="detailsContent__title">Call</h3>
+                            <p class="detailsContent__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corporis eos dolorem quam nihil nemo sint non laborum ad aut, voluptas sit, dolor amet facilis saepe possimus enim aliquam quidem.</p>
+                            <span class="detailsContent__footer">
+                                8502 Preston Rd. Inglewand. Maine 98380
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header container">
+            <div class="footer__logo">
+                <a href="index.html" class="footer__logoLink">
+                    <img src="img/logoBlogWhite.png" class="footer__image" loading="lazy" alt="Logo Blog tecnológico">
+                </a>
+            </div>
+            <div class="footer__networks">
+                <h3 class="footer__titleNetwork"> Siguenos en nuestras redes</h3>
+                <div class="footer__icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <nav class="footer__menu">
+                <ul class="footer__links">
+                    <li class="footer__list">
+                        <a href="index.html" class="footer__link footer__link--active ">Inicio</a>
+                    </li>
+                    <li class="footer__list">
+                        <a href="about.html" class="footer__link ">Nosotros</a>
+                    </li>
+                    <li class="footer__list">
+                        <a href="services.html" class="footer__link ">Servicios</a>
+                    </li>
+                    <li class="footer__list">
+                        <a href="contact.html" class="footer__link ">Contactos</a>
+                    </li>
+                    <li class="footer__list">
+                        <a href="login.html" class="footer__link ">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <p class="copy">
+            copyright blog tecnológico <span id="year"></span> - Todos los derechos reservados
+        </p>
+    </footer>
+    
+    <i class="goTop fa-solid fa-circle-chevron-up"></i>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/generales.js"></script>
+    </body>
+    </html>

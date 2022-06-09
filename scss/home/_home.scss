@@ -1,0 +1,370 @@
+@use '../base/variables' as var;
+@use '../base/colors' as color;
+@use '../base/globales';
+@use '../base/mixins' as mixin;
+
+.main{
+    .title{
+        @include mixin.text(color.$color1, 1.7rem, var.$font1, normal,center);
+        @include mixin.litle{
+            margin-bottom: 1em;;                
+        }
+    }
+    .topArticles{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include mixin.litle{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .specialties{
+            width: 67%;
+            @include mixin.medium{
+                width: 60%;
+            }
+    
+
+            @include mixin.litle{
+                width: 100%                
+            }
+            .specialty{
+                margin-bottom: var.$unitDiv;
+                &__title{
+                    @include mixin.text(color.$color1, 1.5rem, var.$font1, normal,left);
+                    margin-bottom: var.$unitContent;
+                }
+                &__image{
+                    width: 350px;
+                    float: left;
+                    margin: 0 1em 0.2em 0;
+
+                    @include mixin.medium{
+                        width: 100%;
+                        float: none;  
+                        margin: 0;
+                    }
+            
+                    @include mixin.litle{
+                        width: 100%;
+                        float: none;  
+                        margin: 0;              
+                    }
+                }
+                &__text{
+                    @include mixin.text(color.$color4, 1rem, var.$font2, 1.5,justify);
+                    
+                    margin-bottom: var.$unitContent;        
+                    @include mixin.litle{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 10; 
+                        -webkit-box-orient: vertical;
+
+                    }
+
+                }
+                &__button{
+                    @include mixin.button(color.$color2, color.$color5);
+                    @include mixin.litle{
+                        width: 100%;
+                        text-align: center;
+                        padding: 0.8em 0;      
+                    }
+                }
+            }
+        }
+        .aside{
+            width: 28%;
+            @include mixin.medium{
+                width: 35%;
+            }
+    
+            @include mixin.litle{
+                width: 100%                
+            }
+            .post{
+                margin-bottom: var.$unitDiv;
+                &__subtitle{
+                    @include mixin.text(color.$color1, 1.5rem, var.$font1, normal,left);
+                    margin-bottom: var.$unitContent;
+                }
+                &__image{
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+                &__articles{
+                    list-style-image: url(../../img/check.png);
+                    list-style-position: inside;
+                }
+                &__list{
+                    margin-bottom: 0.7em;
+                }
+                &__link{
+                    @include mixin.text(color.$color6, 1rem, var.$font2, normal,left);
+                }
+            }
+            .loginIndex{
+                margin-bottom: var.$unitDiv;
+                &__subtitle{
+                    @include mixin.text(color.$color1, 1.5rem, var.$font1, normal,left);
+                    margin-bottom: var.$unitContent;
+                }
+                .formLogin{
+                    &__formGroup{
+                        margin-bottom: var.$unitContent;
+                    }
+                    &__title{
+                        @include mixin.text(color.$color6, 1.2rem, var.$font1, normal,left);
+                        font-weight: bold;
+                        display: block;
+                        margin-bottom: 0.3em;   
+                        background-image: url(../../img/lines.png);
+                    }
+                    &__input{
+                        width: 100%;
+                        padding: 0.5em;
+                        border-radius: 5px;
+                        border: 2px solid color.$color6;
+                        font-size: 1rem;
+                        &::placeholder{
+                            color: color.$color6;
+                            font-size: 0.8rem;
+                        }
+                        &:focus{
+                            outline:1px solid color.$color1;
+                        }
+                    }
+                    &__button{
+                        @include mixin.button(color.$color1, color.$color5);
+                        cursor: pointer;
+                        font-size: 1rem;
+                        @include mixin.litle{
+                            width: 100%                
+                        }
+                    }
+                }
+            }
+            .popular{
+                @include mixin.litle{
+                    padding: 0 1em;                
+                }
+                .popular__subtitle{
+                    @include mixin.text(color.$color1, 1.5rem, var.$font1, normal,left);
+                    margin-bottom: var.$unitContent;
+                }
+                .popular__content{
+                    display: flex;
+                    margin-bottom: var.$unitContent;
+                    .popular__number{
+                        @include mixin.text(color.$color2, 2rem, var.$font1, normal,left);
+                        margin-right: 1em;
+                    }
+                    .popular__text{
+                        @include mixin.text(color.$color4, 1rem, var.$font2, normal,justify);
+                        margin-top: 0.7em;
+                    }
+                }
+                hr{
+                    margin-bottom: 1em;
+                }
+
+            }
+        }
+
+    }
+
+    .bottomArticle{
+        background-color: color.$color4;
+        padding: 2.5em 0;
+        .articles{
+            &__title{
+                @include mixin.text(color.$color5, 1.2rem, var.$font1, normal,center);
+                margin-bottom:var.$unitContent;                
+            }
+            &__text{
+                @include mixin.text(color.$color5, 1rem, var.$font2, normal,center);
+                margin-bottom:var.$unitContent;
+            }
+
+            .articlesContainer{
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                flex-wrap: wrap;
+                .article{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 30%; 
+                    border-radius: 1em;
+                    background-color: color.$color3;
+                    overflow: hidden;
+                    padding-bottom: 1.5em;
+                    @include mixin.medium{
+                        width: 45%;
+                    }
+                    @include mixin.litle{
+                        width: 90%;
+                    }
+                    &:hover .articleMain__image{
+                        transform: scale(2.3);
+                    }
+                    
+                    &:hover .articleSecondary{
+                        top: 0;
+                        
+                    }
+                    
+                    position: relative;
+                    .articleMain{
+                        width: 100%;
+                        height: 100%;
+
+                      
+
+                        &__image {
+                            width: 100%;
+                            transition: transform .5s;
+                        }
+                        .headerArticle{
+                            padding: 1em;
+
+                            &__title{
+                                @include mixin.text(color.$color5, 1rem, var.$font1, normal,left);                                
+                                font-weight: bold
+                            }
+                            &__date{
+                                @include mixin.text(color.$color5, 0.7rem, var.$font2, normal,right);
+                                display: block;
+                                font-weight: lighter;
+                                margin-bottom: var.$unitDiv;
+                            }
+                        }
+                        .footerArticle{
+                            padding: 1em;
+                            display: flex;
+                            justify-content: space-between;
+                        
+                            &__user{
+                                display: flex;
+
+                                .fa-regular{
+                                    margin-right: 0.5em;
+                                }
+                            }
+                            &__nameUser{
+                                font-family: var.$font1;
+                                color: color.$color5;
+                                font-size: 0.8rem;
+                            }
+                            .details{
+                                display: flex;
+                                &__footer{
+                                    display: flex;
+                                    margin-left: 1em;
+
+                                    .fa-regular{
+                                        margin-right: 0.5em;
+                                        display: inline-block;
+                                    }
+
+                                }
+                                &__number{
+                                    color: color.$color5;
+                                    font-family: var.$font2;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+
+                    }
+                    .articleSecondary{
+
+                        background-color: rgba(0,0,0,.7);
+                        position: absolute;
+                        top: 100%;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 100;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        transition: top .7s;
+                        
+                        .headerArticle{
+                            padding: 1em;
+
+                            &__title{
+                                @include mixin.text(color.$color5, 1rem, var.$font1, normal,left);                                
+                                font-weight: bold
+                            }
+                            &__date{
+                                @include mixin.text(color.$color5, 0.7rem, var.$font2, normal,right);
+                                display: block;
+                                font-weight: lighter;
+                                margin-bottom: 5rem;
+                            }
+                            &__text{
+                                @include mixin.text(color.$color5, 0.8rem, var.$font2, normal,justify);
+                                margin-bottom: var.$unitContent;                  
+                            }
+                            &__link{
+                                @include mixin.text(color.$color5, 0.7rem, var.$font1, normal,left);
+                                font-weight: bold;
+                                display: inline-block;
+                                margin-bottom: var.$unitDiv;
+                            }
+                            hr{
+                                border-color: color.$color1;
+                            }
+                        }
+                        .footerArticle{
+                            padding: 1em;
+                            display: flex;
+                            justify-content: space-between;
+                        
+                            &__user{
+                                display: flex;
+
+                                .fa-regular{
+                                    margin-right: 0.5em;
+                                }
+                            }
+                            &__nameUser{
+                                font-family: var.$font1;
+                                color: color.$color5;
+                                font-size: 0.8rem;
+                            }
+                            .details{
+                                display: flex;
+                                &__footer{
+                                    display: flex;
+                                    margin-left: 1em;
+
+                                    .fa-regular{
+                                        margin-right: 0.5em;
+                                        display: inline-block;
+                                    }
+
+                                }
+                                &__number{
+                                    color: color.$color5;
+                                    font-family: var.$font2;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+
+
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

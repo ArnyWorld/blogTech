@@ -1,0 +1,162 @@
+@use '../base/variables' as var;
+@use '../base/colors' as color;
+@use '../base/mixins' as mixin;
+
+
+.servicesContainer{
+    display: flex;
+    align-items: center;
+    background-color: color.$color4;
+    padding: 2em;
+    margin-bottom: var.$unitDiv;
+
+    @include mixin.medium{
+        flex-direction: column;
+    }
+
+    .contentLeft{
+        padding-right:2em ;
+        @include mixin.medium{
+            margin-bottom: var.$unitDiv;
+        }
+        &__subtitle{
+            @include mixin.text(color.$color5, 1.7rem, var.$font1, normal, left);
+            margin-bottom: var.$unitContent;
+        }
+        &__text{
+            @include mixin.text(color.$color5, 1rem, var.$font2, 1.6, justify);
+            font-weight: 300;
+            margin-bottom: var.$unitDiv;
+        }
+        &__button{
+            @include mixin.button(color.$color1, color.$color5);
+        }
+    }
+    .imageServices{
+        width: 50%;
+
+        @include mixin.medium{
+            width: 80%;
+        }
+        
+    }
+}
+
+.servicesIcons{
+    display: flex;
+    gap:2em;
+    flex-wrap: wrap;
+    margin-bottom: var.$unitDiv;
+    padding: 1em 0;
+    @include mixin.litle{
+        justify-content: center;
+    }
+    .description{
+        width: 23%;
+        @include mixin.medium{
+            width: 43%;
+        }
+        @include mixin.litle{
+            width: 85%;
+        }
+        &__title{
+            @include mixin.text(color.$color3, 1.3rem, var.$font1, normal, left);
+            margin-bottom: var.$unitContent;     
+        }        
+        &__text{
+            @include mixin.text(color.$color4, 1rem, var.$font2, normal, left);
+            margin-bottom: var.$unitContent;
+        }
+        &__button{
+            @include mixin.button(color.$color4, color.$color5);
+        }
+    }
+    .iconContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 23%;
+        @include mixin.medium{
+            width: 43%;
+        }
+        @include mixin.litle{
+            width: 85%;
+        }
+        
+        &__icon{
+            font-size: 2.5rem;
+            color: color.$color3;
+            margin-bottom: var.$unitContent;
+            transition: transform .7s;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+        
+        &__title{
+            @include mixin.text(color.$color4, 1.2rem, var.$font1, normal, left);
+            margin-bottom: var.$unitContent;
+        }
+        &__text{
+            @include mixin.text(color.$color4, 1rem, var.$font2, normal, center);
+        }
+    }
+}
+
+.testimonials{
+    background-color:rgb(121, 121, 121, 0.3) ;
+    padding: 2em 0;
+    &__subtitle{
+        @include mixin.text(color.$color1, 1.7rem, var.$font1, normal, center);
+        margin-bottom: var.$unitContent;       
+    }
+    &__description{
+        @include mixin.text(color.$color4, 1rem, var.$font2, normal, center);
+        margin-bottom: var.$unitContent*4;
+        @include mixin.litle{
+            margin-bottom: var.$unitContent*2;
+        }
+    }
+
+    .testimonialContainer{
+        padding-top: 5em;
+        .swiper-slide{
+            width: 450px!important;
+            margin: 0 0.6em;
+            @include mixin.litle{
+                width: 300px!important;
+            }
+            
+            .testimonial{
+                background-color: color.$color5;
+                padding: 4em 1.5em 2em 1.5em;
+                margin-bottom: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                
+                &__image{
+                    position: absolute;
+                    top: -30%;
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    object-position: top;
+                    border-radius: 50%;
+                    @include mixin.litle{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                &__name{
+                    @include mixin.text(color.$color4, 1.2rem, var.$font1, normal, left);
+                    margin-bottom: var.$unitContent;
+                }
+                &__text{
+                    @include mixin.text(color.$color4, 1rem, var.$font2, normal, center);
+                }
+            }
+        }
+    }
+}

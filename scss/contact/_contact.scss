@@ -1,0 +1,153 @@
+@use '../base/variables' as var;
+@use '../base/colors' as color;
+@use '../base/mixins' as mixin;
+@use '../base/globales';
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    margin-bottom: var.$unitDiv;
+
+    @include mixin.medium{
+        flex-direction: column;
+    }
+
+    .contentLeft{
+        padding-right:2em ;
+        @include mixin.medium{
+            margin-bottom: var.$unitDiv;
+        }
+        &__subtitle{
+            @include mixin.text(color.$color4, 1.7rem, var.$font1, normal, left);
+            margin-bottom: var.$unitContent;
+        }
+        &__text{
+            @include mixin.text(color.$color4, 1rem, var.$font2, 1.6, justify);
+            font-weight: 300;
+            margin-bottom: var.$unitDiv;
+        }
+        &__button{
+            @include mixin.button(color.$color1, color.$color5);
+        }
+    }
+    .imageContact{
+        width: 50%;
+
+        @include mixin.medium{
+            width: 80%;
+        }
+        
+    }
+}
+hr{
+    height: 3px;
+    background-color: color.$color4;
+    margin-bottom: var.$unitDiv;
+}
+
+.detailsContact{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: var.$unitDiv;
+    
+    @include mixin.litle{
+        flex-direction: column;
+    }
+
+    .formContact{
+        width: 45%;
+        background-color: color.$color4;
+        padding: 2em 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include mixin.litle{
+            width:95%;
+            order:2;
+        }
+
+        &__formControl{
+            width: 100%;
+            margin-bottom: var.$unitContent;
+        }
+        &__label{
+            @include mixin.text(color.$color5, 1rem, var.$font1, normal, left);    
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+        &__input{
+            @include mixin.text(color.$color5, 1rem, var.$font2, normal, left);
+            padding: 0.3em;
+            display: block;
+            width: 100%;
+        }
+        &__button{
+            @include mixin.button(color.$color1, color.$color5);
+            font-size: 1.1rem;
+        }
+    }
+    .detailsContainer{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        @include mixin.litle{
+            width:85%;
+            order:1;
+        }
+
+        .detailsContent{
+            margin-bottom: var.$unitContent;
+            display: flex;
+            gap: 2em;
+            @include mixin.litle{
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+                margin-bottom: var.$unitDiv;
+            }
+        
+            
+            &__icon{
+                font-size: 2.5rem;
+                color: color.$color3;
+                margin-bottom: var.$unitContent;
+                transition: transform .7s;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+            }
+            &__title{
+                @include mixin.text(color.$color4, 1.2rem, var.$font1, normal, left);  
+                margin-bottom: var.$unitContent;
+                @include mixin.litle{
+                    text-align: center;
+                }
+        
+            }
+            &__text{
+                @include mixin.text(color.$color4, 1rem, var.$font2, 1.6, left);  
+                margin-bottom: var.$unitContent;
+                @include mixin.litle{
+                    text-align: center;
+                }
+            }
+            &__footer{
+                @include mixin.text(color.$color4, 1rem, var.$font2, normal, left);
+                font-weight: bold;
+                @include mixin.litle{
+                    display: block;
+                    text-align: center;
+                }
+        
+            }
+        }
+
+    }
+
+}

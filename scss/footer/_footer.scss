@@ -1,0 +1,77 @@
+@use '../base/variables' as var;
+@use '../base/colors' as color;
+@use '../base/globales';
+@use '../base/mixins' as mixin;
+
+.footer{
+    background-color: color.$color2;
+    &__header{
+        padding: 3rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mixin.litle{
+            flex-direction: column;                
+        }
+    }
+    &__logo{
+        width: 250px;
+        @include mixin.medium{
+            width: 200px;
+        }
+        @include mixin.litle{
+ 
+            margin-bottom: 2em;               
+        }
+    }
+    &__logoLink{
+        width: 100%;
+    }
+    &__image{
+        width: 100%;
+    }
+    &__networks{
+        
+        @include mixin.litle{
+            margin-bottom: 2em;                
+        }
+
+    }
+    &__titleNetwork{
+        @include mixin.text(color.$color5, 1.2rem, var.$font1, normal,center);
+        margin-bottom: 1em;
+        font-weight: 700;
+    }
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__links{
+        display: flex;
+        list-style: none;
+        @include mixin.medium{
+            flex-direction: column;
+            align-items: center;
+           
+        }
+    }
+    &__list{
+        @include mixin.litle{
+            margin-bottom: 0.7em;              
+        }
+
+    }
+    &__link{
+        @include mixin.text(color.$color5, 1rem, var.$font2, normal,left);
+        margin-left: 1em;
+        @include mixin.litle{
+            margin-left: 0;              
+        }
+    }
+
+    .copy{
+        background-color: color.$color3;
+        padding: 1em 0;
+        @include mixin.text(color.$color5, 1rem, var.$font2, normal,center);
+    }
+}

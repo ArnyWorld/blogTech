@@ -1,0 +1,244 @@
+@use '../base/variables' as var;
+@use '../base/colors' as color;
+@use '../base/mixins' as mixin;
+@use '../base/globales';
+
+.login{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    .loginLeft{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to top left, #0096FA, #42536B);
+        position: relative;
+        @include mixin.medium{
+            width: 50%;
+        }
+        @include mixin.litle{
+            display: none;
+        }
+
+        &__image{
+            width: 70%;
+            margin-bottom: 25px;
+        }
+
+        &__title{
+            @include mixin.text(color.$color5, 2rem, var.$font1, normal,center);
+            margin-bottom: var.$unitDiv;
+        }
+
+        &__text{
+            @include mixin.text(color.$color5, 1.4rem, var.$font2, 1.6,center);
+        }
+
+        .navigationLogin{
+            display: flex;
+            position: absolute;
+            bottom: 1rem;
+            width: 75%;
+            justify-content: space-between;
+            &__link{
+
+                @include mixin.text(color.$color5, 1rem, var.$font2, normal,left);
+                font-weight: 400;
+
+            }
+        }
+    }
+    .loginRight{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @include mixin.medium{
+            width: 50%;
+        }
+        @include mixin.litle{
+            width: 100%;
+        }
+
+        .form{
+            width: 70%;
+            @include mixin.litle{
+                width: 90%;
+            }
+    
+            &__image{
+                width: 300px;
+                display: block;
+                margin: auto;
+                margin-bottom: var.$unitDiv;
+            }
+            &__title{
+                @include mixin.text(color.$color4, 2rem, var.$font1, normal,center);
+                font-weight: 400;
+                margin-bottom: var.$unitDiv;
+            }
+            &__control{
+                position: relative;
+                width: 100%;
+                height: 40px;
+                margin-bottom: var.$unitContent;
+            }
+            &__label{
+                display: block;
+                position: absolute;
+                z-index: 10;
+                top: 10px;
+                left: 5px;
+                @include mixin.text(color.$color4, 1rem, var.$font2, normal,left);
+                user-select: none;
+                transition: transform .5s ease;   
+            }
+            &__icon{
+                margin-right: 8px;
+                color: color.$color2;
+
+            }
+            &__input{
+                position: absolute;
+                width: 100%;
+                padding: 15px 7px 5px 10px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #a9a9a9;
+                font-size: 1rem;
+                color: color.$color2;
+                &:focus{
+                    outline: none;
+                }
+                &:focus ~ .form__label, &:not(:placeholder-shown) + .form__label{
+                    transform: translateY(-15px) scale(.9);
+                    color: color.$color1;
+                    transform-origin: top left;
+                }
+                &:focus+ .form__label .form__icon{
+                    color: color.$color1;
+                }
+            }
+
+            &__terms{
+                @include mixin.text(color.$color4, 0.8rem, var.$font2, normal,center);
+                margin: var.$unitDiv 0;
+                span{
+                    color: color.$color1;
+                    cursor: pointer;
+                }
+            }
+
+            &__submit{
+                @include mixin.button(color.$color1, color.$color5);
+                width: 100%;
+                padding: 0.7em 0;
+                font-size: 1rem;
+                position: relative;
+                overflow: hidden;
+                &::after{
+                    content:'';
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255,255,255,.1);
+                    clip-path: circle(0% at 50% 50%);
+                    transition: clip-path .5s ease;
+                }
+                &:hover::after{
+                    clip-path: circle(100.0% at 50% 50%);
+                }
+            }    
+            &__remember{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 25px;
+                .rememberCheck{
+                    &__label{
+                        color: color.$color2;
+                        font-size: 0.8rem;
+                    }
+    
+                }
+
+            }        
+            &__rememberLink{
+                font-size: 0.8rem;
+                color: color.$color1;
+            }
+            &__newAccount{
+                color: color.$color1;
+            }
+            &__createAccount, &__buttonGoogle{
+                @include mixin.button(transparent, color.$color1);
+                width: 100%;
+                border: 2px solid color.$color1;
+                font-size: 1rem;
+                text-align: center;
+                margin-bottom: var.$unitDiv;
+            }
+            &__textGoogle{
+                text-align: center;
+                margin-bottom: var.$unitDiv;
+                font-family: var.$font2;
+                font-size: 0.8rem;
+                span{
+                    color: color.$color1;
+                }
+            }
+            &__buttonGoogle{
+                border: 1px solid color.$color2;
+                color: color.$color2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 100;
+                &::before{
+                    content:'';
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0096FA;
+                    opacity: .1;
+                    clip-path: circle(0% at 50% 50%);
+                    transition: clip-path .5s ease;
+                }
+                &:hover::before{
+                    clip-path: circle(100.0% at 50% 50%);
+                }
+             
+            }
+            &__imageGoogle{
+                width: 20px;
+                margin-right: 15px;
+                z-index: 100;
+            }
+        }
+        .navigationLogin{
+            display: none;
+            position: absolute;
+            bottom: 1rem;
+            width: 75%;
+            justify-content: space-between;
+            @include mixin.litle{
+                display: flex
+            }
+            &__link{
+
+                @include mixin.text(color.$color4, 1rem, var.$font2, normal,left);
+                font-weight: 400;
+
+            }
+        }
+    }
+}
