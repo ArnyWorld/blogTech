@@ -292,7 +292,7 @@ html {
   margin-bottom: 1em;
 }
 .main .topArticles .aside .post__articles {
-  list-style-image: url(../../img/check.png);
+  list-style-image: url(../img/check.png);
   list-style-position: inside;
 }
 .main .topArticles .aside .post__list {
