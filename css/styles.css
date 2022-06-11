@@ -63,7 +63,7 @@ html {
 .header {
   width: 100%;
   min-height: 75vh;
-  background-image: url(../img/header.jpg);
+  background-image: url(../../img/header.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -292,7 +292,7 @@ html {
   margin-bottom: 1em;
 }
 .main .topArticles .aside .post__articles {
-  list-style-image: url(../img/check.png);
+  list-style-image: url(../../img/check.png);
   list-style-position: inside;
 }
 .main .topArticles .aside .post__list {
@@ -839,8 +839,8 @@ html {
 
 .servicesIcons {
   display: flex;
-  gap: 2em;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 1.5rem;
   padding: 1em 0;
 }
@@ -850,11 +850,12 @@ html {
   }
 }
 .servicesIcons .description {
-  width: 23%;
+  width: 22%;
 }
 @media (max-width: 972px) {
   .servicesIcons .description {
     width: 43%;
+    margin-bottom: 1.5em;
   }
 }
 @media (max-width: 768px) {
@@ -893,11 +894,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 23%;
+  width: 22%;
 }
 @media (max-width: 972px) {
   .servicesIcons .iconContent {
     width: 43%;
+    margin-bottom: 1.5em;
   }
 }
 @media (max-width: 768px) {
@@ -918,7 +920,7 @@ html {
   font-family: "Roboto", sans-serif;
   color: #3F4756;
   font-size: 1.2rem;
-  text-align: left;
+  text-align: center;
   line-height: normal;
   margin-bottom: 1rem;
 }

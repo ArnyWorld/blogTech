@@ -44,17 +44,20 @@
 
 .servicesIcons{
     display: flex;
-    gap:2em;
+    
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: var.$unitDiv;
     padding: 1em 0;
+
     @include mixin.litle{
         justify-content: center;
     }
     .description{
-        width: 23%;
+        width: 22%;
         @include mixin.medium{
             width: 43%;
+            margin-bottom: 1.5em;
         }
         @include mixin.litle{
             width: 85%;
@@ -75,9 +78,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 23%;
+        width: 22%;
         @include mixin.medium{
             width: 43%;
+            margin-bottom: 1.5em;
         }
         @include mixin.litle{
             width: 85%;
@@ -94,7 +98,7 @@
         }
         
         &__title{
-            @include mixin.text(color.$color4, 1.2rem, var.$font1, normal, left);
+            @include mixin.text(color.$color4, 1.2rem, var.$font1, normal, center);
             margin-bottom: var.$unitContent;
         }
         &__text{
